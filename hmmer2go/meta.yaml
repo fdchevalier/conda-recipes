@@ -1,0 +1,54 @@
+{% set version = "0.18.2" %}
+
+package:
+  name: hmmer2go
+  version: {{ version }}
+
+source:
+  git_url: https://github.com/sestaton/HMMER2GO.git
+  git_tag: v{{ version }}
+
+requirements:
+  build:
+    - make
+    - perl>=5.32
+    - perl-app-cpanminus
+    - perl-capture-tiny
+    - perl-class-load
+    - perl-data-optlist
+    - perl-getopt-long-descriptive
+    - perl-module-pluggable
+    - perl-string-rewriteprefix
+    - perl-sub-exporter
+    - perl-sub-install
+    - perl-test-fatal
+
+  run:
+    - perl>=5.32
+    - perl-bioperl >=1.7.8
+    - perl-capture-tiny
+    - perl-class-load
+    - perl-data-optlist
+    - perl-getopt-long-descriptive
+    - perl-html-tableextract
+    - perl-http-tiny
+    - perl-ipc-system-simple >=1.21
+    - perl-module-pluggable
+    - perl-string-rewriteprefix
+    - perl-sub-exporter
+    - perl-sub-install
+    - perl-test-fatal
+    - perl-try-tiny
+    - perl-xml-libxml
+    - hmmer>=3
+
+about:
+  home: https://github.com/sestaton/HMMER2GO
+  license: MIT
+  summary: 'Annotate DNA sequences for Gene Ontology terms'
+  dev_url: https://github.com/sestaton/HMMER2GO
+  doc_url: https://github.com/sestaton/HMMER2GO/wiki
+
+extra:
+  maintainers:
+    - Frédéric Chevalier
