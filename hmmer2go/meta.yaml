@@ -40,6 +40,7 @@ requirements:
     - perl-test-fatal
     - perl-try-tiny
     - perl-xml-libxml
+    - emboss
     - hmmer>=3
 
 about:
