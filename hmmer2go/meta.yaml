@@ -43,6 +43,10 @@ requirements:
     - emboss
     - hmmer>=3
 
+test:
+  source_files:
+    - t/test_data
+
 about:
   home: https://github.com/sestaton/HMMER2GO
   license: MIT
